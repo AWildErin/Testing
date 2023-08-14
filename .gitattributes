@@ -1,0 +1,29 @@
+# Auto detect text files and perform LF normalization
+* text=auto
+
+# These are binary files
+*.vmap lfs
+*.vpk lfs
+
+## Models
+*.blend lfs
+*.fbx lfs
+*.dmx lfs
+
+## Audio ##
+*.wav lfs
+*.ogg lfs
+
+## Fonts ##
+.ttf lfs
+
+## Textures ##
+*.sbs lfs
+*.psd lfs
+*.png lfs
+*.jpg lfs
+*.tga lfs
+
+# Compiled
+*_c lfs
+*._c lfs

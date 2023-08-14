@@ -1,0 +1,31 @@
+# Ignore the default materials because these are
+# generated each time we load the tools for w/e reason
+materials/default/*
+
+# Source 2/Sandbox stuff
+tools_*_*.bin
+accesslist.txt
+*bakeresourcecache*
+
+*/.autosave/
+*.blend1
+Scene_Scene_Collection.fbx
+
+*.generated.*
+*.vmap.meta
+
+# SBox
+logs/
+
+# Misc stuff
+*.csproj
+code/obj/
+code/properties/
+.intermediate/
+.vs/
+__pycache__
+
+**/backup/
+
+_tools/*
+_content/*

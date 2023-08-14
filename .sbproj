@@ -1,0 +1,123 @@
+{
+  "Title": "Testing",
+  "Type": "game",
+  "Org": "local",
+  "Ident": "testing",
+  "Tags": null,
+  "Schema": 1,
+  "HasAssets": true,
+  "AssetsPath": "",
+  "Resources": null,
+  "MenuResources": "UI/GameMenu/*\n/fonts/*",
+  "HasCode": true,
+  "CodePath": "code",
+  "PackageReferences": [],
+  "EditorReferences": null,
+  "Metadata": {
+    "MapList": [],
+    "MaxPlayers": 2,
+    "MinPlayers": 1,
+    "RankType": "None",
+    "PerMapRanking": true,
+    "MapSelect": "Empty",
+    "LeaderboardType": "None",
+    "GameNetworkType": "Multiplayer",
+    "GameCategory": "None",
+    "Compiler": {
+      "RootNamespace": "Testing",
+      "DefineConstants": "SANDBOX;ADDON;DEBUG",
+      "NoWarn": "1701;1702;1591;",
+      "Nullables": true,
+      "References": [],
+      "DistinctReferences": []
+    },
+    "Collision": {
+      "Defaults": {
+        "solid": "Collide",
+        "trigger": "Trigger",
+        "ladder": "Ignore",
+        "water": "Trigger",
+        "item": "Collide",
+        "player": "Unset"
+      },
+      "Pairs": [
+        {
+          "a": "solid",
+          "b": "solid",
+          "r": "Collide"
+        },
+        {
+          "a": "trigger",
+          "b": "playerclip",
+          "r": "Ignore"
+        },
+        {
+          "a": "trigger",
+          "b": "solid",
+          "r": "Trigger"
+        },
+        {
+          "a": "solid",
+          "b": "trigger",
+          "r": "Collide"
+        },
+        {
+          "a": "playerclip",
+          "b": "solid",
+          "r": "Collide"
+        },
+        {
+          "a": "water",
+          "b": "item"
+        },
+        {
+          "a": "item",
+          "b": "item"
+        },
+        {
+          "a": "ladder",
+          "b": "item"
+        },
+        {
+          "a": "trigger",
+          "b": "item"
+        },
+        {
+          "a": "solid",
+          "b": "item"
+        },
+        {
+          "a": "item",
+          "b": "player",
+          "r": "Ignore"
+        }
+      ]
+    },
+    "ControlModes": {
+      "Keyboard": true,
+      "Gamepad": true
+    },
+    "DefaultLeaderboards": [
+      "Testing"
+    ],
+    "GameSettings": {},
+    "GeneralExtensions": false,
+    "TargettedExtensions": false,
+    "ExtensionApiVersion": 1001,
+    "CsProjName": "",
+    "HttpAllowList": null,
+    "TickRate": 50,
+    "LaunchConfigs": [
+      {
+        "Name": "Empty Map",
+        "GameIdent": "local.testing#local",
+        "MapName": "\u003Cempty\u003E",
+        "MaxPlayers": 1,
+        "GameSettings": {},
+        "Addons": "",
+        "PreLaunchCommand": "",
+        "PostLaunchCommand": ""
+      }
+    ]
+  }
+}
